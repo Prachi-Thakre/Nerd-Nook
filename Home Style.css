@@ -1,0 +1,79 @@
+body{
+	background-image: url(home-bg.png);
+	background-size: 100% 56%;
+	background-repeat: no-repeat;
+}
+li{
+	display: inline;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+}
+ul{
+	padding-top: 13px;
+	text-align: right;
+}
+a{
+	padding: 13px;
+	color: #000080;
+	text-decoration: none;
+	transition: font-size 0.5s;
+}
+li a:hover{
+	font-size: 25px;
+}
+.greet{
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	padding: 200px;
+	padding-bottom: 350px;
+	text-align: center;
+	color: #000080;
+}
+.column{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	color: #000080;
+	float: left;
+	width: 33.333%;
+}
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.slideanim{
+	visibility: hidden;
+}
+.slideanim.slide{
+	visibility: visible;
+	animation: slide 1s;
+}
+.slideanim:after{
+	content: "";
+	display: table;
+	clear: both; 
+}
+@keyframes slide{
+	0% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.strip{
+	background-color: #dddddd;
+	background-size: 100% 10%;
+	vertical-align: middle;
+	color: #000080;
+}
+.message{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #000080;
+	text-align: center;
+	padding: 100px;
+}
